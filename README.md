@@ -11,6 +11,11 @@ And my very bad XOR function included :)
 
 [Protocol Implemented](https://tools.ietf.org/html/rfc6455 "RFC6455")
 
+This is by no means a complete implementation, it is still missing elements such as
+HTTP authorization, SSL, Proxy Support, Extensions etc.
+
+It is more seen as a simpler project for educational purposes.
+
 ## Example Use
 
 ```c#
