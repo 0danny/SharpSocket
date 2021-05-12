@@ -10,9 +10,9 @@ using System.Text.RegularExpressions;
 using System.Security.Cryptography;
 using System.Collections;
 
-namespace RFC6455_Implementation
+namespace SharpSocket
 {
-    public class WebSocket
+    public class SharpSocket
     {
         /*
          * RFC6455 Websocket Implementation
@@ -25,7 +25,7 @@ namespace RFC6455_Implementation
         private string GUID = "258EAFA5-E914-47DA-95CA-C5AB0DC85B11";
         private event EventHandler<MessageRecievedEventArgs> MessageRecieved;
 
-        public WebSocket()
+        public SharpSocket()
         {
             Console.Title = "WebSocket RFC6455 | Dan";
 
@@ -265,7 +265,7 @@ namespace RFC6455_Implementation
 
         public static void Main(string[] args)
         {
-            WebSocket p = new WebSocket();
+            SharpSocket p = new SharpSocket();
         }
     }
 
