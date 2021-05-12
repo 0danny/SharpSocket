@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2CFDE77C-6A11-467A-96FE-562F54FD56C4}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <RootNamespace>SharpSocket</RootNamespace>
-    <AssemblyName>SharpSocket</AssemblyName>
+    <ProjectGuid>{ABBBE5B9-FF5E-49AC-8D4A-02D58670D7B5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SharpSocket.Example</RootNamespace>
+    <AssemblyName>SharpSocket.Example</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,10 +32,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SharpSocket">
+      <HintPath>..\SharpSocket\bin\Debug\SharpSocket.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,10 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Logger.cs" />
-    <Compile Include="SharpSocket.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SocketUser.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
